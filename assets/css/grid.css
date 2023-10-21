@@ -1,0 +1,37 @@
+.grid-container {
+display: grid;    
+grid-template-columns: 100px auto 100px;
+grid-template-rows: 300px auto 250px; 
+}
+
+.grid-item {
+background-color: aqua;  
+border: 1px black;  
+text-align: center;
+padding: 20px;
+}
+
+.grid-container2 {
+    display: grid; 
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 170px 170px;
+    grid-gap: 10px;
+}
+
+#hero {
+    background-color: orangered; 
+    grid-column: 1 / span 2;
+}
+
+#sidebar {
+    background-color: orange ;
+    grid-row: 3;
+    grid-column: span 2;
+}
+
+.content {
+    background-color: olive; 
+   
+
+
+}
