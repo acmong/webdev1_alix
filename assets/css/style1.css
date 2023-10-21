@@ -1,0 +1,21 @@
+
+body {
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+
+
+}
+.Image {
+    background-image: url("webdev1_alix\assets\img\hkitty.png");
+    width: 500px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+}
+#imageDescription {
+    color: cornflowerblue;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+
+}

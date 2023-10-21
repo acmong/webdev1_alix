@@ -1,0 +1,29 @@
+
+#box1 {
+    width: 150px;
+    height: 150px;
+    border: 3px solid blueviolet;
+    padding: 10px;
+    padding-left: 10px; 
+    padding-right: 100px;
+}
+
+#box2 {
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 25%;
+    background-color: darkmagenta;
+    color: rgb(128, 122, 121);
+}
+
+#box3 {
+width: 150px; ;
+height: 150px;
+border: 1px solid black;
+border-color: turquoise;
+padding: 30px
+/*border-radius: 50;*/
+margin: 50px;
+
+
+}

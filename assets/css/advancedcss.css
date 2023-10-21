@@ -1,0 +1,94 @@
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    margin:50px;
+}
+
+@keyframes animation1 {
+    /*from {background-color: bisque;}
+    to {background-color: turquoise;}*/
+
+    0% {background-color: aliceblue; width: 25px;}
+        25% {background-color: aquamarine; width: 250px;}
+        50% {background-color: blue; width: 200px}
+        75% {background-color: yellow; width: 100px}
+        100% {background-color: olivedrab; width: 200px;} 
+    
+}
+
+.animation {
+    animation-name: animation1;
+    animation-duration: 20s;
+    background-color: bisque;
+    animation-iteration-count: infinite;
+
+
+}
+
+.transition {
+    background-color: violet;
+    transition: width 1s, transform 3s; 
+    width: 200px; 
+}
+
+.transition:hover {
+    width: 350px; 
+    transform: translateX(1900px);
+    
+}
+
+.rotate {
+    animation: rotation 10s infinite;
+    background-color: green;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-element {
+    transform: rotate(360deg);
+    background-color: green;
+}
+
+.scale-element {
+    transform: scale(2.5) ;
+    background-color: blue;
+}
+
+.skew-element {
+transform: skew(30deg, 20deg);
+/*transform: skewX (-30deg);*/
+/*transform: skewY(-20deg); */
+background-color: yellow;
+}
+
+.translate-element {
+    /* transform: translate(50px, 20px); */ 
+   /* transform: translateX(50px); */
+    transform: translateY(300px);
+    background-color: orange;
+    animation: MoveUpDown 1s linear infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(300px);
+    }
+
+.combined-transform {
+    transform: rotate(45deg) scale(1.5) skew(10deg, 5deg) translate(20px, 10px);
+    background-color: brown;
+}
