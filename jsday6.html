@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/jsday6.css" type="text/css" rel="stylesheet" />
+    
+    <title>JS DAY 6</title>
+</head>
+<body>
+   
+    <div id="generator"></div> 
+    <div id="myAnimation"></div>
+    <div id="myContainer"></div>
+    <div id="printing"></div>
+    <div id="events">
+    <p onmouseenter="hover()" onmouseout="out()"> 
+        Hello There XD
+    </p>
+    </div>
+    <p onclick="colstyle()" class="collection">p1</p>
+    <p onclick="colstyle()" class="collection">p2</p>
+    <p onclick="colstyle()" class="collection">p3</p>
+    <p onclick="colstyle()" class="collection">p4</p>
+
+    <p>ToDo List: Text To Add a ToDo, and a list to show the current ToDo list</p>
+    <div id="todoList"> 
+        <div id="addTodoContainer">
+            <input type="text" id="todoTextInput"/>
+            <button type="button" onclick="submitTodo()">Add</button>
+        </div>
+        <div id="todoListContainer" class="flex justify-center align-center w-[300px]">
+            <ul id="todoUL" class="w-[150]">
+
+            </ul>
+        </div>    
+    </div>
+</body>
+<script src="jsday6.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+</html>
