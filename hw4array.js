@@ -71,4 +71,3 @@ if (numFruits < 3 || numFruits > 10) {
   
     console.log("Food:", food);
 }
-/*
